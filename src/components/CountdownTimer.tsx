@@ -12,7 +12,7 @@ interface TimeLeft {
 export function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [isComplete, setIsComplete] = useState(false);
-  const targetDate = new Date('2025-01-10T10:00:00');
+  const targetDate = new Date('2025-01-15T10:00:00');
 
   useEffect(() => {
     const timer = setInterval(() => {
